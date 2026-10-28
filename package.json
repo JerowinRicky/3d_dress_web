@@ -1,0 +1,13 @@
+{
+  "name": "loki_ecom",
+  "version": "1.0.0",
+  "description": "LOKI 3D Dress E-Commerce Platform",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "start:server": "npm --prefix server start",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": ["loki", "3d", "fashion", "threejs", "r3f"],
+  "author": "LOKI",
+  "license": "ISC"
+}

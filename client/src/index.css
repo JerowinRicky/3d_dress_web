@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FFF9FB] text-[#3A3033] font-sans antialiased overflow-x-hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF0F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #F6B6C8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C85C7A;
+}
+
+/* Luxury glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(246, 182, 200, 0.35);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(246, 182, 200, 0.3);
+}
+
+/* Luxury button glow effect */
+.btn-loki {
+  background: linear-gradient(135deg, #F6B6C8 0%, #EA9AB0 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(246, 182, 200, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-loki:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(246, 182, 200, 0.6);
+  background: linear-gradient(135deg, #F3A4BB 0%, #C85C7A 100%);
+}
+.btn-loki:active {
+  transform: translateY(0);
+}
+
+/* 3D Canvas container */
+.showroom-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
